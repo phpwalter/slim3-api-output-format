@@ -3,9 +3,16 @@
         "slim/slim": "^3.0@beta",
         "openlss/lib-array2xml": "^0.0.9"
     },
+
+    "require-dev": {
+      "phpunit/phpunit": ">=4.8 < 6.0",
+      "squizlabs/php_codesniffer": "^2.7",
+      "roave/security-advisories": "dev-master"
+    },
+
     "autoload": {
         "psr-4": {
-            "App\\": "app/src"
+            "Renderer\\": {"Renderer\\": "src/Renderer"}
         }
     }
 }
